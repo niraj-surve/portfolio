@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import { skills } from "./skills";
+import { skills } from "../../data.js";
 
 const Skills = forwardRef((props, ref) => {
   const renderSkills = (category) => {
