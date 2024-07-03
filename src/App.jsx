@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
+import Experience from "./components/Experience/Experience";
 
 function App() {
   const sectionsRef = useRef({});
@@ -54,6 +55,7 @@ function App() {
       <Home ref={(el) => (sectionsRef.current.home = el)} />
       <About ref={(el) => (sectionsRef.current.about = el)} />
       <Skills ref={(el) => (sectionsRef.current.skills = el)} />
+      <Experience ref={(el) => (sectionsRef.current.experience = el)} />
     </>
   );
 }

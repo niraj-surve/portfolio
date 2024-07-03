@@ -42,6 +42,12 @@ const Skills = forwardRef((props, ref) => {
               {renderSkills("Other")}
             </div>
           </div>
+          <div className="w-full h-[21rem] flex flex-col items-center gap-8 rounded-2xl hover:bg-transparent border border-transparent hover:border-white fade bg-gray-800 p-8">
+            <h3 className="text-primary">Tools I use</h3>
+            <div className="w-full grid grid-cols-2 gap-8 ml-12">
+              {renderSkills("Tools")}
+            </div>
+          </div>
         </div>
       </div>
     </section>
