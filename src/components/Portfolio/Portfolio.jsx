@@ -21,14 +21,14 @@ const Portfolio = forwardRef((props, ref) => {
         </div>
         <div className="grid grid-cols-splitBtns gap-4 text-sm">
           {prj.github && (
-            <button className="bg-transparent border border-primary rounded-lg hover:bg-white hover:text-dark hover:border-transparent fade px-5 py-4">
+            <button className="max-md:text-xs bg-transparent border border-primary rounded-lg hover:bg-white hover:text-dark hover:border-transparent fade px-5 py-4">
               <a href={prj.github} target="_blank">
                 Github
               </a>
             </button>
           )}
           {prj.website && (
-            <button className="w-full bg-primary border border-primary rounded-lg hover:bg-white hover:text-dark hover:border-transparent fade px-5 py-4">
+            <button className="max-md:text-xs w-full bg-primary border border-primary rounded-lg hover:bg-white hover:text-dark hover:border-transparent fade px-5 py-4">
               <a
                 href={prj.website === "this" ? "#home" : prj.website}
                 target={prj.website === "this" ? "_self" : "_blank"}

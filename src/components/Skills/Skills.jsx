@@ -24,25 +24,25 @@ const Skills = forwardRef((props, ref) => {
       <div className="w-3/4 mx-auto h-full relative flex flex-col items-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-8">My Skills</h2>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="w-full h-[24.5rem] flex flex-col items-center gap-8 rounded-2xl hover:bg-transparent border border-transparent hover:border-white fade bg-gray-800 p-8">
+          <div className="w-full md:h-[20rem] max-md:h-[24.5rem] flex flex-col items-center gap-8 rounded-2xl hover:bg-transparent border border-transparent hover:border-white fade bg-gray-800 p-8">
             <h3 className="text-primary">Frontend Development</h3>
             <div className="w-full grid grid-cols-2 gap-8 md:ml-12">
               {renderSkills("Frontend")}
             </div>
           </div>
-          <div className="w-full h-[24.5rem] flex flex-col items-center gap-8 rounded-2xl hover:bg-transparent border border-transparent hover:border-white fade bg-gray-800 p-8">
+          <div className="w-full md:h-[20rem] max-md:h-[24.5rem] flex flex-col items-center gap-8 rounded-2xl hover:bg-transparent border border-transparent hover:border-white fade bg-gray-800 p-8">
             <h3 className="text-primary">Backend Development</h3>
             <div className="w-full grid grid-cols-2 gap-8 md:ml-12">
               {renderSkills("Backend")}
             </div>
           </div>
-          <div className="w-full h-[24.5rem] flex flex-col items-center gap-8 rounded-2xl hover:bg-transparent border border-transparent hover:border-white fade bg-gray-800 p-8">
+          <div className="w-full md:h-[20rem] max-md:h-[24.5rem] flex flex-col items-center gap-8 rounded-2xl hover:bg-transparent border border-transparent hover:border-white fade bg-gray-800 p-8">
             <h3 className="text-primary">Other skills</h3>
             <div className="w-full grid grid-cols-2 gap-8 md:ml-12">
               {renderSkills("Other")}
             </div>
           </div>
-          <div className="w-full h-[24.5rem] flex flex-col items-center gap-8 rounded-2xl hover:bg-transparent border border-transparent hover:border-white fade bg-gray-800 p-8">
+          <div className="w-full md:h-[20rem] max-md:h-[24.5rem] flex flex-col items-center gap-8 rounded-2xl hover:bg-transparent border border-transparent hover:border-white fade bg-gray-800 p-8">
             <h3 className="text-primary">Tools I use</h3>
             <div className="w-full grid grid-cols-2 gap-8 md:ml-12">
               {renderSkills("Tools")}

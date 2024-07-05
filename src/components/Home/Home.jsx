@@ -17,7 +17,7 @@ const Home = forwardRef((props, ref) => {
         <CallToAction />
         <Socials />
         <div className="group">
-          <div className="md:w-72 md:h-120 absolute bottom-[15vh] left-1/2 transform -translate-x-1/2 mt-16 rounded-full overflow-hidden p-4 z-[2]">
+          <div className="md:w-64 absolute max-md:bottom-[15vh] left-1/2 transform -translate-x-1/2 mt-16 rounded-full overflow-hidden p-4 z-[2]">
             <img src={me} alt="me" className="cursor-pointer border-8 border-primary rounded-full" />
           </div>
         </div>
