@@ -15,7 +15,7 @@ export default {
         poppins: "Poppins, sans-serif",
       },
       gridTemplateColumns: {
-        split: "1fr 11fr",
+        split: "3fr 9fr",
         contact: "4fr 8fr",
         splitBtns: "2fr 10fr",
       },

@@ -6,7 +6,7 @@ import Socials from "./Socials.jsx";
 const Home = forwardRef((props, ref) => {
   return (
     <section id="home" ref={ref} className="h-screen pt-16">
-      <div className="w-full md:w-3/4 mx-auto h-full px-8 md:px-40 relative flex flex-col items-center">
+      <div className="w-full md:w-3/4 mx-auto h-full px-8 md:px-40 relative flex flex-col gap-4 items-center">
         <h5 className="text-gray-500">Hi I'm</h5>
         <h1 className="text-3xl md:text-[40px] font-bold text-white font-poppins">
           Niraj Surve

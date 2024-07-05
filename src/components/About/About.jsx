@@ -11,8 +11,8 @@ const About = forwardRef((props, ref) => {
         <h5 className="text-gray-500">Get To Know</h5>
         <h2 className="text-3xl font-bold mb-16">About Me</h2>
 
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-split justify-center max-md:items-center gap-16">
-          <div className="relative mx-auto w-3/4 md:w-[85%] aspect-square bg-primary rounded-2xl flex items-center justify-center self-center">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-split justify-center max-md:items-center gap-8">
+          <div className="relative mx-auto w-3/4 aspect-square bg-primary rounded-2xl flex max-md:items-center max-md:mb-8">
             <div className="overflow-hidden cursor-pointer w-full bg-blue-300 bg-[url('./assets/sqaure-bg.png')] bg-cover  rounded-2xl transform transition-transform duration-500 hover:rotate-0 -rotate-12 p-4">
               <img
                 src={myImage}
@@ -24,7 +24,7 @@ const About = forwardRef((props, ref) => {
 
           <div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6 max-md:justify-center">
-              <div className="h-40 bg-gray-800 border border-transparent rounded-xl p-4 flex flex-col max-md:justify-center items-center gap-2 text-center transition duration-500 hover:bg-transparent hover:border-primary cursor-pointer">
+              <div className="h-md:md48-52 bg-gray-800 border border-transparent rounded-xl p-4 flex flex-col max-md:justify-center items-center gap-2 text-center transition duration-500 hover:bg-transparent hover:border-primary cursor-pointer">
                 <GiGraduateCap className="text-primary text-2xl" />
                 <h5 className="text-lg">Degree</h5>
                 <small className="text-sm text-gray-400 flex flex-col gap-2">
@@ -33,19 +33,18 @@ const About = forwardRef((props, ref) => {
                 </small>
               </div>
 
-              <div className="h-40 bg-gray-800 border border-transparent rounded-xl p-4 flex flex-col max-md:justify-center items-center gap-2 text-center transition duration-500 hover:bg-transparent hover:border-primary cursor-pointer">
+              <div className="h-40 md:h-48 bg-gray-800 border border-transparent rounded-xl p-4 flex flex-col max-md:justify-center items-center gap-2 text-center transition duration-500 hover:bg-transparent hover:border-primary cursor-pointer">
                 <BsBookmarkStar className="text-primary text-2xl" />
                 <h5 className="text-lg">CGPA</h5>
                 <small className="text-sm text-gray-400">8.68</small>
               </div>
 
-              <div className="h-40 bg-gray-800 border border-transparent rounded-xl p-4 flex flex-col max-md:justify-center items-center gap-2 text-center transition duration-500 hover:bg-transparent hover:border-primary cursor-pointer">
+              <div className="h-40 md:h-48 bg-gray-800 border border-transparent rounded-xl p-4 flex flex-col max-md:justify-center items-center gap-2 text-center transition duration-500 hover:bg-transparent hover:border-primary cursor-pointer">
                 <TfiWorld className="text-primary text-2xl" />
                 <h5 className="text-lg">Domains</h5>
                 <small className="text-sm text-gray-400">
                   <ul>
-                    <li>Frontend Development</li>
-                    <li>Backend Development</li>
+                    <li>Full Stack Development</li>
                   </ul>
                 </small>
               </div>
