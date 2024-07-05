@@ -73,10 +73,10 @@ const Navbar = () => {
       </a>
       <a
         title="Contact Me"
-        href="#contacts"
-        onClick={() => setActiveNav("#contacts")}
+        href="#contact"
+        onClick={() => setActiveNav("#contact")}
         className={`${
-          activeNav === "#contacts"
+          activeNav === "#contact"
             ? "bg-primary text-bg"
             : "bg-transparent text-white hover:bg-black hover:bg-opacity-40 fade"
         } p-2.5 rounded-full flex text-light text-lg`}

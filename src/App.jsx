@@ -4,6 +4,8 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const sectionsRef = useRef({});
@@ -56,6 +58,8 @@ function App() {
       <About ref={(el) => (sectionsRef.current.about = el)} />
       <Skills ref={(el) => (sectionsRef.current.skills = el)} />
       <Experience ref={(el) => (sectionsRef.current.experience = el)} />
+      <Portfolio ref={(el) => (sectionsRef.current.portfolio = el)} />
+      <Contact ref={(el) => (sectionsRef.current.contact = el)} />
     </>
   );
 }

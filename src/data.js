@@ -5,6 +5,11 @@ import { SiIntellijidea, SiMongodb, SiMysql, SiPostman, SiSpringboot } from "rea
 import { VscVscode } from "react-icons/vsc";
 
 import SlashMark from "./assets/company/SlashMark.png";
+import Library from "./assets/portfolio/library-app.png";
+import SchoolMATE from "./assets/portfolio/schoolmate.png";
+import Cafeteria from "./assets/portfolio/cafeteria.png";
+import Portfolio from "./assets/portfolio/portfolio.png";
+import WForecast from "./assets/portfolio/wforecast.png";
 
 export const skills = [
   { icon: FaHtml5, title: "HTML", level: "Experienced", category: "Frontend" },
@@ -74,3 +79,41 @@ export const experience = [
     endDate: "Apr 2024"
   }
 ]
+
+export const projects = [
+  {
+    title: "Library App",
+    technology: "Java | Maven | MySQL",
+    image: Library,
+    github: "https://github.com/niraj-surve/library-app",
+    website: "",
+  },
+  {
+    title: "WForecast",
+    technology: "ReactJS | Weather API",
+    image: WForecast,
+    github: "https://github.com/niraj-surve/weather-forecasting",
+    website: "https://wforecasting.netlify.app/",
+  },
+  {
+    title: "SchoolMATE",
+    technology: "ReactJS | Spring Boot | MongoDB",
+    image: SchoolMATE,
+    github: "https://github.com/niraj-surve/schoolmate",
+    website: "https://jeevan-shikshan-school.netlify.app",
+  },
+  {
+    title: "Cafeteria App",
+    technology: "MERN Stack",
+    image: Cafeteria,
+    github: "https://github.com/niraj-surve/library-app",
+    website: "https://cafeteria-famt.netlify.app/",
+  },
+  {
+    title: "Portfolio Website",
+    technology: "ReactJS | Tailwind CSS",
+    image: Portfolio,
+    github: "https://github.com/niraj-surve/portfolio",
+    website: "this",
+  },
+];

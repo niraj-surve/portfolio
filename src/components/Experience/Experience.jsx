@@ -26,7 +26,7 @@ const Experience = forwardRef((props, ref) => {
   return (
     <section id="experience" ref={ref} className="min-h-screen py-14">
       <div className="w-3/4 mx-auto h-full relative flex flex-col items-center">
-        <h2 className="text-4xl font-bold mb-8">My Experience</h2>
+        <h2 className="text-4xl font-bold mb-8">Experience</h2>
         <div className="w-92 flex">
           {renderExperience()}
         </div>
