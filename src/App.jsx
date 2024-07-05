@@ -6,9 +6,11 @@ import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const sectionsRef = useRef({});
+  const footerRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +26,11 @@ function App() {
           activeSection = `#${section.id}`;
           break;
         }
+      }
+
+      const footerRect = footerRef.current.getBoundingClientRect();
+      if (footerRect.top <= window.innerHeight) {
+        activeSection = "";
       }
 
       const navLinks = document.querySelectorAll("nav a");
@@ -60,6 +67,7 @@ function App() {
       <Experience ref={(el) => (sectionsRef.current.experience = el)} />
       <Portfolio ref={(el) => (sectionsRef.current.portfolio = el)} />
       <Contact ref={(el) => (sectionsRef.current.contact = el)} />
+      <Footer ref={footerRef} />
     </>
   );
 }
