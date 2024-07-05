@@ -30,11 +30,11 @@ const Contact = forwardRef((props, ref) => {
 
   return (
     <section id="contact" ref={ref} className="min-h-screen py-14">
-      <div className="w-3/4 mx-auto h-full relative flex flex-col items-center">
+      <div className="md:w-3/4 mx-auto h-full relative flex flex-col items-center">
         <h5 className="text-gray-500">Get in touch</h5>
         <h2 className="text-3xl md:text-4xl font-bold mb-8">Contact Me</h2>
-        <div className="container mx-auto grid md:grid-cols-contact justify-center gap-16">
-          <div className="bg-gray-800 rounded-2xl flex flex-col gap-4 items-center justify-center p-8">
+        <div className="md:mx-auto w-3/4 grid grid-cols-1 md:grid-cols-contact justify-center gap-16">
+          <div className="bg-gray-800 rounded-2xl w-full flex flex-col gap-4 items-center justify-center p-8">
             <div className="overflow-hidden w-[200px] rounded-full p-4">
               <img
                 src={Me}

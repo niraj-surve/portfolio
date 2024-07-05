@@ -3,12 +3,12 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Footer = forwardRef((props, ref) => {
   return (
-    <div ref={ref} className="h-[75vh] bg-primary">
+    <div ref={ref} className="h-full bg-primary">
       <div className="w-3/4 mx-auto flex flex-col items-center justify-evenly gap-10 p-8 text-gray-800">
-        <h2 className="text-4xl font-bold mt-8 cursor-pointer hover:text-white fade">
+        <h2 className="text-3xl md:text-4xl font-bold mt-8 cursor-pointer hover:text-white fade">
           Niraj Surve
         </h2>
-        <ul className="flex gap-4 items-center font-thin">
+        <ul className="flex gap-4 items-center font-thin max-md:text-sm">
           <li className="hover:text-white fade">
             <a href="#home">Home</a>
           </li>
@@ -51,7 +51,7 @@ const Footer = forwardRef((props, ref) => {
             </a>
           </div>
         </div>
-        <span className="text-xs mt-8">
+        <span className="text-xs mt-8 mb-20">
           © <a className="hover:text-white fade" href="#home">Niraj Surve</a>. All rights reserved.
         </span>
       </div>
