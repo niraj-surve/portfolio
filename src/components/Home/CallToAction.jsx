@@ -12,7 +12,7 @@ const CTA = () => {
         Download CV
       </a>
       <a
-        href="#contacts"
+        href="#contact"
         className="btn btn-primary border border-primary bg-primary text-white hover:bg-white hover:border-white hover:text-dark fade py-3 px-5 rounded text-sm"
       >
         Contact Me

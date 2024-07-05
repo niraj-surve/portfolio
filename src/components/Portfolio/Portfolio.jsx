@@ -11,7 +11,7 @@ const Portfolio = forwardRef((props, ref) => {
         <img
           src={prj.image}
           alt={prj.title}
-          className="w-96 h-32  border bg-white rounded-lg"
+          className="w-96 h-32 border bg-white rounded-lg"
         />
         <div className="flex flex-col gap-4 items-center">
           <h3 className="text-xl font-bold text-center">{prj.title}</h3>
@@ -46,7 +46,7 @@ const Portfolio = forwardRef((props, ref) => {
     <section id="portfolio" ref={ref} className="min-h-screen py-14">
       <div className="w-3/4 mx-auto h-full relative flex flex-col items-center">
         <h2 className="text-4xl font-bold mb-8">Portfolio</h2>
-        <div className="w-92 grid grid-cols-1 md:grid-cols-3 gap-8">{renderProjects()}</div>
+        <div className="w-92 grid grid-cols-1 md:grid-cols-3 gap-8 max-md:px-8">{renderProjects()}</div>
       </div>
     </section>
   );

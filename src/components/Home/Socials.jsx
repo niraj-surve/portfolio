@@ -3,7 +3,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const HeaderSocials = () => {
   return (
-    <div className="header__socials flex flex-col items-center gap-4 absolute left-0 bottom-24 after:content-[''] after:w-px after:h-8 after:bg-primary">
+    <div className="flex flex-col items-center gap-4 absolute left-8 md:left-0 bottom-[100px] after:content-[''] after:w-px after:h-8 after:bg-primary">
       <a
         title="LinkedIn"
         href="https://www.linkedin.com/in/niraj-surve07"

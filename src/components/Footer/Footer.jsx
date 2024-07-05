@@ -52,7 +52,7 @@ const Footer = forwardRef((props, ref) => {
           </div>
         </div>
         <span className="text-xs mt-8">
-          © Niraj Surve. All rights reserved.
+          © <a className="hover:text-white fade" href="#home">Niraj Surve</a>. All rights reserved.
         </span>
       </div>
     </div>
