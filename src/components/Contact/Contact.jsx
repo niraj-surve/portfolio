@@ -1,8 +1,33 @@
 import React, { forwardRef } from "react";
 import Me from "../../assets/Me.png";
 import { FaEnvelope } from "react-icons/fa6";
+import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
+import toast from "react-hot-toast";
 
 const Contact = forwardRef((props, ref) => {
+  const {
+    register,
+    handleSubmit,
+    reset,
+  } = useForm();
+
+  const onSubmit = (data) => {
+    emailjs
+      .send("service_382bprv", "template_fcn9jm7", data, "0xUSpS56tw-2UNQ2U")
+      .then(
+        (result) => {
+          toast.success("Message sent!", { duration: 3000 });
+          reset();
+        },
+        (error) => {
+          toast.error("Failed to send message! Try again later.", {
+            duration: 3000,
+          });
+        }
+      );
+  };
+
   return (
     <section id="contact" ref={ref} className="min-h-screen py-14">
       <div className="w-3/4 mx-auto h-full relative flex flex-col items-center">
@@ -22,20 +47,62 @@ const Contact = forwardRef((props, ref) => {
               <span>Email</span>
               <span>niraj.surve07@gmail.com</span>
             </div>
-              <a className="text-sm text-primary" href="mailto:niraj.surve07@gmail.com">Send a message</a>
+            <a
+              className="text-sm text-primary"
+              href="mailto:niraj.surve07@gmail.com"
+            >
+              Send a message
+            </a>
           </div>
 
-          <form className="flex flex-col gap-8 justify-between">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="flex flex-col gap-8 justify-between"
+            autoComplete="off"
+          >
             <div className="w-full rounded-lg focus-within:ring-4 focus-within:ring-primary focus-within:border-transparent border-2">
-                <input type="text" className="w-full rounded-lg p-4 outline-none bg-transparent text-sm" placeholder="Your full name" required />
+              <input
+                type="text"
+                {...register("name", {
+                  pattern: {
+                    value: /^[A-Za-z\s]+$/,
+                    message: "Invalid name",
+                  },
+                })}
+                className="w-full rounded-lg p-4 outline-none bg-transparent text-sm"
+                placeholder="Your full name"
+                required
+              />
             </div>
             <div className="w-full rounded-lg focus-within:ring-4 focus-within:ring-primary focus-within:border-transparent border-2">
-                <input type="email" className="w-full rounded-lg p-4 outline-none bg-transparent text-sm" placeholder="Your email" required />
+              <input
+                type="email"
+                {...register("email", {
+                  pattern: {
+                    value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                    message: "Invalid email address",
+                  },
+                })}
+                className="w-full rounded-lg p-4 outline-none bg-transparent text-sm"
+                placeholder="Your email"
+                required
+              />
             </div>
             <div className="w-full rounded-lg focus-within:ring-4 focus-within:ring-primary focus-within:border-transparent border-2">
-                <textarea name="message" id="message" rows={6} className="resize-none w-full rounded-lg p-4 outline-none bg-transparent text-sm" placeholder="Message"></textarea>
+              <textarea
+                {...register("message")}
+                rows={6}
+                className="resize-none w-full rounded-lg p-4 outline-none bg-transparent text-sm"
+                placeholder="Message"
+                required
+              ></textarea>
             </div>
-            <button className="self-start px-4 py-2 rounded-lg text-sm bg-primary hover:bg-white hover:text-dark fade">Send Message</button>
+            <button
+              type="submit"
+              className="self-start px-4 py-2 rounded-lg text-sm bg-primary hover:bg-white hover:text-dark fade"
+            >
+              Send Message
+            </button>
           </form>
         </div>
       </div>

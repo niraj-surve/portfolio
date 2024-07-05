@@ -7,6 +7,7 @@ import Experience from "./components/Experience/Experience";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const sectionsRef = useRef({});
@@ -68,6 +69,7 @@ function App() {
       <Portfolio ref={(el) => (sectionsRef.current.portfolio = el)} />
       <Contact ref={(el) => (sectionsRef.current.contact = el)} />
       <Footer ref={footerRef} />
+      <Toaster position="bottom-right" reverseOrder={false} />
     </>
   );
 }
