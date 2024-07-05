@@ -16,7 +16,7 @@ export default {
       },
       gridTemplateColumns: {
         split: "3fr 9fr",
-        contact: "4fr 8fr",
+        contact: "5fr 7fr",
         splitBtns: "2fr 10fr",
       },
     },
